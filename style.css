@@ -2302,6 +2302,21 @@ a.contact-quick-card:hover {
   color: var(--text-light);
 }
 
+.contact-quick-card--image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.contact-quick-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.contact-quick-card-body {
+  padding: 20px 24px 24px;
+}
+
 /* ===== CONTACT FORM CARD ===== */
 .contact-form-card {
   background: var(--white);
