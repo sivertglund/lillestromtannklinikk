@@ -98,6 +98,32 @@ section {
   color: #bfdbfe;
 }
 
+.demo-banner-sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+.demo-banner-sticky a {
+  color: #93c5fd;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.demo-banner-sticky a:hover {
+  color: #bfdbfe;
+}
+
 /* ===== HEADER / NAV ===== */
 .header {
   position: sticky;
