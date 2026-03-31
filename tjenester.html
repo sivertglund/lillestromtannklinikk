@@ -32,6 +32,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="tjenester.html" class="active">Tjenester</a></li>
           <li><a href="priser.html">Priser</a></li>
+          <li><a href="teamet.html">Teamet</a></li>
           <li><a href="om.html">Om oss</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
           <li><a href="kontakt.html" class="btn btn-primary btn-nav">Bestill time</a></li>
@@ -58,158 +59,149 @@
     </div>
   </section>
 
-  <!-- ===== UNDERSØKELSE ===== -->
-  <section class="service-detail" id="undersokelse">
+  <!-- ===== HURTIGNAVIGASJON ===== -->
+  <nav class="services-nav" aria-label="Tjenester">
     <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="4"/><path d="M8 10l2 12"/><path d="M16 3c-1 0-2 .7-2.2 1.5-.3 1-.8 1.5-1.3 2-.5.8-.2 1.5.3 2 .3.8.3 1.2.5 2.2.3 1.5.5 2.5 1 2.5s.7-1 1-2.5c.3-1.5.5-1.5 1-2.5.5-1 .5-1.5 1-2.5S18 3 16 3Z"/></svg>
+      <ul class="services-nav-list">
+        <li><a href="#undersokelse">Undersøkelse</a></li>
+        <li><a href="#akutt">Tannlegevakt</a></li>
+        <li><a href="#implantat">Implantat</a></li>
+        <li><a href="#bleking">Bleking</a></li>
+        <li><a href="#rotfylling">Rotfylling</a></li>
+        <li><a href="#krone">Krone</a></li>
+        <li><a href="#bro">Bro</a></li>
+        <li><a href="#protese">Protese</a></li>
+        <li><a href="#tannkjott">Tannkjøtt</a></li>
+        <li><a href="#tannlegeskrekk">Tannlegeskrekk</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== TJENESTER GRID ===== -->
+  <section class="services-grid-section">
+    <div class="container">
+      <div class="services-grid-detail">
+
+        <!-- Undersøkelse -->
+        <div class="service-card-detail fade-in" id="undersokelse">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="4"/><path d="M8 10l2 12"/><path d="M16 3c-1 0-2 .7-2.2 1.5-.3 1-.8 1.5-1.3 2-.5.8-.2 1.5.3 2 .3.8.3 1.2.5 2.2.3 1.5.5 2.5 1 2.5s.7-1 1-2.5c.3-1.5.5-1.5 1-2.5.5-1 .5-1.5 1-2.5S18 3 16 3Z"/></svg>
+          </div>
+          <h2>Undersøkelse og forebygging</h2>
+          <p>Grundig undersøkelse med røntgen, rensing av tannstein og forebyggende kontroll. Tidlig oppdagelse gir enklere og rimeligere behandling.</p>
+          <span class="service-price">Fra kr 600,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
         </div>
-        <h2>Undersøkelse og forebygging</h2>
-        <p>For at tennene dine skal være sunne og friske er det viktig med jevnlig og grundig tannpleie. Med regelmessige besøk hos tannlege oppdages betennelser, hull og tannproblemer tidlig — og behandlingen blir enklere og rimeligere. Vi tilbyr grundig undersøkelse med røntgen, rensing av tannstein og forebyggende kontroll.</p>
-        <span class="service-price">Fra kr 600,-</span>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
+
+        <!-- Tannimplantat -->
+        <div class="service-card-detail fade-in" id="implantat">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C10.5 2 9.5 2.8 9.2 3.8C8.8 5 8 5.5 7.3 6.5C6.5 7.5 6.8 8.8 7.2 9.8C7.5 10.8 7.8 11.5 8 12.5C8.3 13.8 8.5 14.5 9.3 14.5C10 14.5 10 13.5 10.3 12.5C10.7 11 11 10.5 12 10.5C13 10.5 13.3 11 13.7 12.5C14 13.5 14 14.5 14.7 14.5C15.5 14.5 15.7 13.8 16 12.5C16.2 11.5 16.5 10.8 16.8 9.8C17.2 8.8 17.5 7.5 16.7 6.5C16 5.5 15.2 5 14.8 3.8C14.5 2.8 13.5 2 12 2Z"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="10" y1="16.5" x2="14" y2="16.5"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"/><line x1="11" y1="20.5" x2="13" y2="20.5"/></svg>
+          </div>
+          <h2>Tannimplantat</h2>
+          <p>Erstatt manglende tenner med holdbare implantater i titan. En permanent løsning som ser ut og føles som ekte tenner.</p>
+          <span class="service-price">Fra kr 18 000,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Tannbleking -->
+        <div class="service-card-detail fade-in" id="bleking">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C10 4 8.5 5.2 8 6.8C7.5 8.5 6.2 9 5.3 10.2C4.5 11.5 4.8 13 5.3 14.2C5.8 15.5 6.2 16.5 6.5 17.8C7 19.5 7.3 21.5 8.5 21.5C9.7 21.5 9.7 19.5 10.2 17.8C10.7 16 11 15.5 12 15.5C13 15.5 13.3 16 13.8 17.8C14.3 19.5 14.3 21.5 15.5 21.5C16.7 21.5 17 19.5 17.5 17.8C17.8 16.5 18.2 15.5 18.7 14.2C19.2 13 19.5 11.5 18.7 10.2C17.8 9 16.5 8.5 16 6.8C15.5 5.2 14 4 12 4Z"/><path d="M3 3L4 5L3 7L1 6L3 3Z" class="sparkle"/><path d="M20 2L21 4L20 6L18 5L20 2Z" class="sparkle"/><path d="M19 14L20.5 15L19 16L17.5 15L19 14Z" class="sparkle"/></svg>
+          </div>
+          <h2>Tannbleking</h2>
+          <p>Opalescence hjemmebleking med tilpasset skinne. Trygg behandling med synlige resultater — skinnen kan gjenbrukes.</p>
+          <span class="service-price">Fra kr 2 800,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Rotfylling -->
+        <div class="service-card-detail fade-in" id="rotfylling">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M9 13L8.5 18" stroke-dasharray="2 2"/><path d="M12 12L12 17" stroke-dasharray="2 2"/><path d="M15 13L15.5 18" stroke-dasharray="2 2"/></svg>
+          </div>
+          <h2>Rotfylling</h2>
+          <p>Behandling av skadet nerve i tannen. Med moderne bedøvelse og utstyr er det ingen grunn til bekymring.</p>
+          <span class="service-price">Fra kr 2 500,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Tannkrone -->
+        <div class="service-card-detail fade-in" id="krone">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10L7 4L10 8L12 3L14 8L17 4L19 10"/><path d="M5 10C5 10 5 12 5 13C5 15 7 16 12 16C17 16 19 15 19 13C19 12 19 10 19 10"/><path d="M7 16L6 22H18L17 16"/></svg>
+          </div>
+          <h2>Tannkrone</h2>
+          <p>Sterk og langsiktig løsning for ødelagte tenner. Porselen eller metall-keramiske kroner tilpasset dine tenner.</p>
+          <span class="service-price">MK-krone fra kr 5 200,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Tannbro -->
+        <div class="service-card-detail fade-in" id="bro">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V10C3 10 3 6 7 6C9.5 6 10 8 10 10"/><path d="M21 18V10C21 10 21 6 17 6C14.5 6 14 8 14 10"/><path d="M10 10C10 10 10 6 12 6C14 6 14 10 14 10"/><line x1="3" y1="18" x2="3" y2="22"/><line x1="21" y1="18" x2="21" y2="22"/></svg>
+          </div>
+          <h2>Tannbro</h2>
+          <p>Få tilbake naturlig utseende og funksjon. Broen lages individuelt og festes til støttetenner på hver side.</p>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Tannprotese -->
+        <div class="service-card-detail fade-in" id="protese">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12C4 8 7 5 12 5C17 5 20 8 20 12"/><path d="M4 12C4 16 7 19 12 19C17 19 20 16 20 12"/><path d="M7 12H9M10.5 12H13.5M15 12H17"/><path d="M8 9V12M11 8.5V12M13 8.5V12M16 9V12"/></svg>
+          </div>
+          <h2>Tannprotese</h2>
+          <p>Hel- og delproteser tilpasset dine behov. Etter kort tilvenning føles protesen som dine egne tenner.</p>
+          <span class="service-price">Helprotese fra kr 9 500,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
+        <!-- Tannkjøttbehandling -->
+        <div class="service-card-detail fade-in" id="tannkjott">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6C10.5 6 9.5 6.8 9.2 7.8C8.8 9 8 9.5 7.3 10.5C6.5 11.5 6.8 12.8 7.2 13.8C7.5 14.8 7.8 15.5 8 16.5C8.3 17.8 8.5 19 9.3 19C10 19 10 18 10.3 16.5C10.7 15 11 14.5 12 14.5C13 14.5 13.3 15 13.7 16.5C14 18 14 19 14.7 19C15.5 19 15.7 17.8 16 16.5C16.2 15.5 16.5 14.8 16.8 13.8C17.2 12.8 17.5 11.5 16.7 10.5C16 9.5 15.2 9 14.8 7.8C14.5 6.8 13.5 6 12 6Z"/><path d="M3 9C5 8 8 7.5 12 7.5C16 7.5 19 8 21 9" stroke-width="2" opacity="0.3"/></svg>
+          </div>
+          <h2>Tannkjøttbehandling</h2>
+          <p>Behandling av gingivitt og periodontitt. Helfo-godkjent med mulig refusjon. Ta kontakt ved mistanke om betennelse.</p>
+          <span class="service-price">Egenandel fra kr 700,-</span>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Bestill time</a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== TANNLEGEVAKT / AKUTTBEHANDLING ===== -->
-  <section class="service-detail service-detail--highlight" id="akutt">
+  <!-- ===== TANNLEGEVAKT (FREMHEVET) ===== -->
+  <section class="service-highlight-section service-highlight--emergency" id="akutt">
     <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
+      <div class="service-highlight-inner fade-in">
+        <div class="service-highlight-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M13 6L10.5 11H13.5L11 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h2>Tannlegevakt / Akuttbehandling</h2>
-        <p>Smerter i tennene er nærmest uutholdelige, og bør behandles raskt. Vi tilbyr akutt tannbehandling med time samme dag — også lørdager. Uansett om det gjelder tannverk, brukket tann, mistet fylling, infeksjon eller betennelse i tannkjøttet, står vår tannlegevakt klar til å hjelpe deg. Jo tidligere du kommer, jo enklere og rimeligere blir behandlingen.</p>
-        <span class="service-price">Akutt konsultasjon fra kr 600,-</span>
-        <a href="tel:63818143" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Ring 63 81 81 43 for akutt time</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TANNIMPLANTAT ===== -->
-  <section class="service-detail" id="implantat">
-    <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Tooth with screw/post underneath -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C10.5 2 9.5 2.8 9.2 3.8C8.8 5 8 5.5 7.3 6.5C6.5 7.5 6.8 8.8 7.2 9.8C7.5 10.8 7.8 11.5 8 12.5C8.3 13.8 8.5 14.5 9.3 14.5C10 14.5 10 13.5 10.3 12.5C10.7 11 11 10.5 12 10.5C13 10.5 13.3 11 13.7 12.5C14 13.5 14 14.5 14.7 14.5C15.5 14.5 15.7 13.8 16 12.5C16.2 11.5 16.5 10.8 16.8 9.8C17.2 8.8 17.5 7.5 16.7 6.5C16 5.5 15.2 5 14.8 3.8C14.5 2.8 13.5 2 12 2Z"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="10" y1="16.5" x2="14" y2="16.5"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"/><line x1="11" y1="20.5" x2="13" y2="20.5"/></svg>
+        <div class="service-highlight-content">
+          <h2>Tannlegevakt / Akuttbehandling</h2>
+          <p>Smerter i tennene bør behandles raskt. Vi tilbyr akutt tannbehandling med time samme dag — også lørdager. Tannverk, brukket tann, mistet fylling, infeksjon eller betennelse — vår tannlegevakt står klar.</p>
+          <span class="service-price" style="display: block; margin-bottom: 16px;">Akutt konsultasjon fra kr 600,-</span>
+          <a href="tel:63818143" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Ring 63 81 81 43 for akutt time</a>
         </div>
-        <h2>Tannimplantat</h2>
-        <p>Et tannimplantat er et godt alternativ for mange — du trenger ikke gode tannrøtter eller feste i nabotenner. Det krever kun at kjevebeinet holder en viss tykkelse, noe de aller fleste har. Først planlegger vi prosessen med røntgenbilder. En metallrot av titan festes til kjevebeinet, og etter noen måneder når roten har grodd fast, festes en krone eller bro-konstruksjon. Med moderne lokalbedøvelse er behandlingen ikke smertefull.</p>
-        <span class="service-price">Implantat/krone inkl. teknikker fra kr 18 000,-</span>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== TANNBLEKING ===== -->
-  <section class="service-detail" id="bleking">
+  <!-- ===== TANNLEGESKREKK (FREMHEVET) ===== -->
+  <section class="service-highlight-section" id="tannlegeskrekk">
     <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Sparkling tooth with sparkle stars -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C10 4 8.5 5.2 8 6.8C7.5 8.5 6.2 9 5.3 10.2C4.5 11.5 4.8 13 5.3 14.2C5.8 15.5 6.2 16.5 6.5 17.8C7 19.5 7.3 21.5 8.5 21.5C9.7 21.5 9.7 19.5 10.2 17.8C10.7 16 11 15.5 12 15.5C13 15.5 13.3 16 13.8 17.8C14.3 19.5 14.3 21.5 15.5 21.5C16.7 21.5 17 19.5 17.5 17.8C17.8 16.5 18.2 15.5 18.7 14.2C19.2 13 19.5 11.5 18.7 10.2C17.8 9 16.5 8.5 16 6.8C15.5 5.2 14 4 12 4Z"/><path d="M3 3L4 5L3 7L1 6L3 3Z" class="sparkle"/><path d="M20 2L21 4L20 6L18 5L20 2Z" class="sparkle"/><path d="M19 14L20.5 15L19 16L17.5 15L19 14Z" class="sparkle"/></svg>
-        </div>
-        <h2>Tannbleking</h2>
-        <p>I motsetning til det mange tror er det ikke skadelig for tennene å gjennomføre en tannbleking. Vi gjør alltid en undersøkelse først for å være sikre på at det ikke er andre tannproblemer som bør rettes på. Vi anbefaler Opalescence blekesystem for hjemmebleking — vår tannlege tar en avstøpning av dine tenner og lager en skinne som passer perfekt. Skinnen er din og kan brukes igjen senere — da trenger du bare nytt blekemiddel.</p>
-        <span class="service-price">Hjemmebleking fra kr 2 800,-</span>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ROTFYLLING ===== -->
-  <section class="service-detail" id="rotfylling">
-    <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Tooth with root canal dashed lines -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 3.5 7 5.5C6.5 7.5 5 8 4 9.5C3 11 3.5 13 4 14.5C4.5 16 5 17 5.5 18.5C6 20 6.5 22 8 22C9.5 22 9.5 20 10 18.5C10.5 17 11 16.5 12 16.5C13 16.5 13.5 17 14 18.5C14.5 20 14.5 22 16 22C17.5 22 18 20 18.5 18.5C19 17 19.5 16 20 14.5C20.5 13 21 11 20 9.5C19 8 17.5 7.5 17 5.5C16.5 3.5 14.5 2 12 2Z"/><path d="M9 13L8.5 18" stroke-dasharray="2 2"/><path d="M12 12L12 17" stroke-dasharray="2 2"/><path d="M15 13L15.5 18" stroke-dasharray="2 2"/></svg>
-        </div>
-        <h2>Rotfylling</h2>
-        <p>Rotfylling er nødvendig når nerven i tannen er skadet — ofte av kariesangrep, dype fyllinger eller slag mot tannen. Rotfylling kan også være nødvendig før man får en krone eller bro. Det finnes mange myter om smerter ved rotfylling, men med dagens utstyr og bedøvelse er det ingen grunn til bekymring. Dersom du har en betent, men levende nerve, får du lokal bedøvelse — er nerven død behøves ingen bedøvelse.</p>
-        <span class="service-price">Fra kr 2 500,-</span>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TANNKRONE ===== -->
-  <section class="service-detail" id="krone">
-    <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Dental crown (zigzag top) -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10L7 4L10 8L12 3L14 8L17 4L19 10"/><path d="M5 10C5 10 5 12 5 13C5 15 7 16 12 16C17 16 19 15 19 13C19 12 19 10 19 10"/><path d="M7 16L6 22H18L17 16"/></svg>
-        </div>
-        <h2>Tannkrone</h2>
-        <p>En tannkrone behøves når den eksisterende tannen er ødelagt slik at hele den synlige delen må erstattes. Kronen består oftest av porselen med et indre metallsjikt, men vi bruker også kroner av hel porselen. En tannkrone er en sterk og langsiktig løsning som i lengden lønner seg fremfor midlertidige løsninger. Husk å vedlikeholde kronen godt — spesielt i overgangen til tannroten.</p>
-        <span class="service-price">MK-krone fra kr 5 200,-</span>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TANNBRO ===== -->
-  <section class="service-detail" id="bro">
-    <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Bridge/arch shape -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V10C3 10 3 6 7 6C9.5 6 10 8 10 10"/><path d="M21 18V10C21 10 21 6 17 6C14.5 6 14 8 14 10"/><path d="M10 10C10 10 10 6 12 6C14 6 14 10 14 10"/><line x1="3" y1="18" x2="3" y2="22"/><line x1="21" y1="18" x2="21" y2="22"/></svg>
-        </div>
-        <h2>Tannbro</h2>
-        <p>Med en tannbro får du tilbake ditt naturlige utseende og kan snakke og spise normalt uten bekymringer. Broen lages individuelt etter dine tenner, og festes til støttetenner på hver side av tannluken. Et alternativ er en etsebro som limes til baksiden av støttetennene, og som også kan brukes som midlertidig løsning før tannimplantat. Mange av våre pasienter opplever bedre selvtillit og generell tannhelse etter en tannbro.</p>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TANNPROTESE ===== -->
-  <section class="service-detail" id="protese">
-    <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Denture shape -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12C4 8 7 5 12 5C17 5 20 8 20 12"/><path d="M4 12C4 16 7 19 12 19C17 19 20 16 20 12"/><path d="M7 12H9M10.5 12H13.5M15 12H17"/><path d="M8 9V12M11 8.5V12M13 8.5V12M16 9V12"/></svg>
-        </div>
-        <h2>Tannprotese</h2>
-        <p>Vi kan hjelpe med både hel- og delproteser. En helprotese erstatter alle tennene i kjeven, mens en delprotese (partiell protese) lages på et støpt metallskjelett med kroker som festes til gjenværende tenner. Delproteser er et godt alternativ til en fastsittende tannbro. I den første tiden kan det føles uvant, men etter kort tid vil protesen føles som dine egne naturlige tenner.</p>
-        <span class="service-price">Helprotese fra kr 9 500,-</span>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TANNKJØTTBEHANDLING ===== -->
-  <section class="service-detail" id="tannkjott">
-    <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Tooth with gum line -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6C10.5 6 9.5 6.8 9.2 7.8C8.8 9 8 9.5 7.3 10.5C6.5 11.5 6.8 12.8 7.2 13.8C7.5 14.8 7.8 15.5 8 16.5C8.3 17.8 8.5 19 9.3 19C10 19 10 18 10.3 16.5C10.7 15 11 14.5 12 14.5C13 14.5 13.3 15 13.7 16.5C14 18 14 19 14.7 19C15.5 19 15.7 17.8 16 16.5C16.2 15.5 16.5 14.8 16.8 13.8C17.2 12.8 17.5 11.5 16.7 10.5C16 9.5 15.2 9 14.8 7.8C14.5 6.8 13.5 6 12 6Z"/><path d="M3 9C5 8 8 7.5 12 7.5C16 7.5 19 8 21 9" stroke-width="2" opacity="0.3"/></svg>
-        </div>
-        <h2>Tannkjøttbehandling</h2>
-        <p>Gingivitt er en enkel tannkjøttbetennelse som kan behandles enkelt. Periodontitt er alvorligere — den angriper tannens festevev og kan gi dype lommer over 10 mm der tannpuss ikke har effekt. Uten behandling løsner tennene gradvis. Røykere har tre ganger så høy risiko for tannkjøttsykdommer. Vi anbefaler å ta kontakt så fort som mulig ved mistanke om tannkjøttbetennelse. Behandlingen er Helfo-godkjent med mulig refusjon.</p>
-        <span class="service-price">Egenandel fra kr 700,-</span>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Bestill time</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TANNLEGESKREKK ===== -->
-  <section class="service-detail service-detail--highlight" id="tannlegeskrekk">
-    <div class="container">
-      <div class="service-detail-inner fade-in">
-        <div class="service-icon">
-          <!-- Gentle hands cradling tooth -->
+      <div class="service-highlight-inner fade-in">
+        <div class="service-highlight-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C10.5 3 9.5 3.8 9.2 5C8.8 6.2 8 6.8 7.3 7.8C6.5 8.8 6.8 10 7.2 11C7.5 12 7.8 12.8 8 13.8C8.3 15 8.5 16.2 9.3 16.2C10.2 16.2 10.2 15 10.5 13.8C10.8 12.5 11 12 12 12C13 12 13.2 12.5 13.5 13.8C13.8 15 13.8 16.2 14.7 16.2C15.5 16.2 15.7 15 16 13.8C16.2 12.8 16.5 12 16.8 11C17.2 10 17.5 8.8 16.7 7.8C16 6.8 15.2 6.2 14.8 5C14.5 3.8 13.5 3 12 3Z"/><path d="M4 18C5.5 17 8 16.5 9 17.5"/><path d="M20 18C18.5 17 16 16.5 15 17.5"/><path d="M4 18C2.5 19 2.5 20.5 4 21.5"/><path d="M20 18C21.5 19 21.5 20.5 20 21.5"/></svg>
         </div>
-        <h2>Tannlegeskrekk</h2>
-        <p>Mange nordmenn lider av odontofobi — tannlegeskrekk. Det mange ikke vet, er at denne frykten ofte er grunnløs. Selv om man kanskje har dårlige minner fra barndommen, har tannleger i dag moderne utstyr og bedøvelse som gjør at de fleste behandlinger ikke er smertefulle. Vår klinikk har ny teknologi med bedre utstyr og smartere bedøvelse. Vi tar oss god tid, forklarer alt som skjer, og du bestemmer selv tempoet.</p>
-        <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Ta kontakt for en uforpliktende samtale</a>
+        <div class="service-highlight-content">
+          <h2>Tannlegeskrekk</h2>
+          <p>Mange nordmenn lider av tannlegeskrekk. Med moderne utstyr og bedøvelse er de fleste behandlinger smertefrie. Vi tar oss god tid, forklarer alt som skjer, og du bestemmer selv tempoet. Det første steget er alltid en uforpliktende samtale.</p>
+          <a href="kontakt.html" class="btn btn-primary btn-tooth-icon"><svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1C7.8 1 6 2.5 5.5 4.3C5 6 3.8 6.5 3 7.8C2 9 2.5 10.8 3 12C3.5 13.3 3.8 14 4.2 15.3C4.7 17 5 18.5 6.2 18.5C7.5 18.5 7.5 17 8 15.3C8.5 13.5 8.8 13 10 13C11.2 13 11.5 13.5 12 15.3C12.5 17 12.5 18.5 13.8 18.5C15 18.5 15.3 17 15.8 15.3C16.2 14 16.5 13.3 17 12C17.5 10.8 18 9 17 7.8C16.2 6.5 15 6 14.5 4.3C14 2.5 12.2 1 10 1Z"/></svg> Ta kontakt for en uforpliktende samtale</a>
+        </div>
       </div>
     </div>
   </section>
@@ -247,6 +239,7 @@
           <ul class="footer-links">
             <li><a href="tjenester.html">Tjenester</a></li>
             <li><a href="priser.html">Priser</a></li>
+            <li><a href="teamet.html">Teamet</a></li>
             <li><a href="om.html">Om oss</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>

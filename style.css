@@ -966,6 +966,264 @@ section {
 }
 
 /* ===== TJENESTER PAGE ===== */
+
+/* Quick-nav bar */
+.services-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+  position: sticky;
+  top: 72px;
+  z-index: 90;
+}
+
+.services-nav-list {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-nav-list a {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-light);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+
+.services-nav-list a:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Services grid */
+.services-grid-section {
+  padding: 60px 0;
+}
+
+.services-grid-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-card-detail {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition);
+}
+
+.service-card-detail:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(26, 107, 156, 0.25);
+  transform: translateY(-2px);
+}
+
+.service-card-detail .service-icon {
+  margin-bottom: 20px;
+}
+
+.service-card-detail:hover .service-icon {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.service-card-detail h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.service-card-detail p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.service-card-detail .service-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.btn-sm {
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
+/* Highlight sections (tannlegevakt, tannlegeskrekk) */
+.service-highlight-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #eef6fb 0%, #f0f8f2 100%);
+}
+
+.service-highlight--emergency {
+  background: linear-gradient(135deg, #fef3cd 0%, #fff8e1 100%);
+}
+
+.service-highlight-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.service-highlight-icon {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  background: rgba(39, 174, 96, 0.12);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-highlight-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--accent);
+}
+
+.service-highlight--emergency .service-highlight-icon {
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.service-highlight--emergency .service-highlight-icon svg {
+  color: #d97706;
+}
+
+.service-highlight-section:hover .service-highlight-icon {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.service-highlight-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.service-highlight-content p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  max-width: 700px;
+}
+
+/* ===== REVIEWS ===== */
+.reviews-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.reviews-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.reviews-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.reviews-stars svg {
+  width: 22px;
+  height: 22px;
+}
+
+.reviews-score {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.review-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 32px;
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+
+.review-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.review-stars svg {
+  width: 18px;
+  height: 18px;
+}
+
+.review-text {
+  color: var(--text);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.review-source {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* Responsive for new components */
+@media (max-width: 768px) {
+  .services-grid-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .services-nav {
+    top: 60px;
+  }
+
+  .services-nav-list {
+    gap: 6px;
+  }
+
+  .services-nav-list a {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .service-highlight-inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Legacy service-detail */
 .service-detail {
   padding: 40px 0;
   border-bottom: 1px solid var(--border);
